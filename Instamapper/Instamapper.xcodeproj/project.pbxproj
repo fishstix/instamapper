@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7261415815F465AF00C586C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415715F465AF00C586C9 /* UIKit.framework */; };
+		7261415A15F465AF00C586C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415915F465AF00C586C9 /* Foundation.framework */; };
+		7261415C15F465AF00C586C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415B15F465AF00C586C9 /* CoreGraphics.framework */; };
+		7261415E15F465AF00C586C9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415D15F465AF00C586C9 /* CoreData.framework */; };
+		7261416415F465AF00C586C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261416215F465AF00C586C9 /* InfoPlist.strings */; };
+		7261416615F465AF00C586C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7261416515F465AF00C586C9 /* main.m */; };
+		7261416A15F465AF00C586C9 /* IMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7261416915F465AF00C586C9 /* IMAppDelegate.m */; };
+		7261416D15F465B000C586C9 /* Instamapper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7261416B15F465AF00C586C9 /* Instamapper.xcdatamodeld */; };
+		7261417515F465B000C586C9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261417415F465B000C586C9 /* SenTestingKit.framework */; };
+		7261417615F465B000C586C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415715F465AF00C586C9 /* UIKit.framework */; };
+		7261417715F465B000C586C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415915F465AF00C586C9 /* Foundation.framework */; };
+		7261417815F465B000C586C9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261415D15F465AF00C586C9 /* CoreData.framework */; };
+		7261418015F465B000C586C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7261417E15F465B000C586C9 /* InfoPlist.strings */; };
+		7261418315F465B000C586C9 /* InstamapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7261418215F465B000C586C9 /* InstamapperTests.m */; };
+		726141A715F468FA00C586C9 /* IMMasterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141A615F468FA00C586C9 /* IMMasterController.m */; };
+		726141B215F469C100C586C9 /* IMDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141B015F469C100C586C9 /* IMDevicesViewController.m */; };
+		726141B315F469C100C586C9 /* IMDevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726141B115F469C100C586C9 /* IMDevicesViewController.xib */; };
+		726141B715F469CF00C586C9 /* IMMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141B515F469CF00C586C9 /* IMMenuViewController.m */; };
+		726141B815F469CF00C586C9 /* IMMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726141B615F469CF00C586C9 /* IMMenuViewController.xib */; };
+		726141BC15F469E300C586C9 /* IMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141BA15F469E300C586C9 /* IMMapViewController.m */; };
+		726141BD15F469E300C586C9 /* IMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726141BB15F469E300C586C9 /* IMMapViewController.xib */; };
+		726141C115F46A2400C586C9 /* IMServiceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141C015F46A2400C586C9 /* IMServiceProvider.m */; };
+		726141C415F46A3900C586C9 /* IMLoginProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141C315F46A3900C586C9 /* IMLoginProvider.m */; };
+		726141C915F46DD800C586C9 /* IMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726141C715F46DD800C586C9 /* IMLoginViewController.m */; };
+		726141CA15F46DD800C586C9 /* IMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726141C815F46DD800C586C9 /* IMLoginViewController.xib */; };
+		726141CB15F473FB00C586C9 /* libfishstix-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261419515F4664500C586C9 /* libfishstix-ios-sdk.a */; };
+		726141CF15F474A100C586C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726141CE15F474A100C586C9 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7261417915F465B000C586C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261414A15F465AF00C586C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7261415215F465AF00C586C9;
+			remoteInfo = Instamapper;
+		};
+		7261419415F4664500C586C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7223FC0F159C333000A2F7E8;
+			remoteInfo = "fishstix-ios-sdk";
+		};
+		7261419615F4664500C586C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7223FC1C159C333100A2F7E8;
+			remoteInfo = "fishstix-ios-sdkTests";
+		};
+		726141CC15F4740D00C586C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7223FC0E159C333000A2F7E8;
+			remoteInfo = "fishstix-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7261415315F465AF00C586C9 /* Instamapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instamapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7261415715F465AF00C586C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7261415915F465AF00C586C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7261415B15F465AF00C586C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7261415D15F465AF00C586C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7261416115F465AF00C586C9 /* Instamapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Instamapper-Info.plist"; sourceTree = "<group>"; };
+		7261416315F465AF00C586C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7261416515F465AF00C586C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7261416715F465AF00C586C9 /* Instamapper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Instamapper-Prefix.pch"; sourceTree = "<group>"; };
+		7261416815F465AF00C586C9 /* IMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAppDelegate.h; sourceTree = "<group>"; };
+		7261416915F465AF00C586C9 /* IMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAppDelegate.m; sourceTree = "<group>"; };
+		7261416C15F465AF00C586C9 /* Instamapper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Instamapper.xcdatamodel; sourceTree = "<group>"; };
+		7261417315F465B000C586C9 /* InstamapperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstamapperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7261417415F465B000C586C9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7261417D15F465B000C586C9 /* InstamapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstamapperTests-Info.plist"; sourceTree = "<group>"; };
+		7261417F15F465B000C586C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7261418115F465B000C586C9 /* InstamapperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstamapperTests.h; sourceTree = "<group>"; };
+		7261418215F465B000C586C9 /* InstamapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstamapperTests.m; sourceTree = "<group>"; };
+		7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "fishstix-ios-sdk.xcodeproj"; path = "../lib/fishstix-ios-sdk/fishstix-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
+		726141A515F468FA00C586C9 /* IMMasterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMasterController.h; sourceTree = "<group>"; };
+		726141A615F468FA00C586C9 /* IMMasterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMasterController.m; sourceTree = "<group>"; };
+		726141AF15F469C100C586C9 /* IMDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMDevicesViewController.h; sourceTree = "<group>"; };
+		726141B015F469C100C586C9 /* IMDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMDevicesViewController.m; sourceTree = "<group>"; };
+		726141B115F469C100C586C9 /* IMDevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMDevicesViewController.xib; sourceTree = "<group>"; };
+		726141B415F469CF00C586C9 /* IMMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMenuViewController.h; sourceTree = "<group>"; };
+		726141B515F469CF00C586C9 /* IMMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMenuViewController.m; sourceTree = "<group>"; };
+		726141B615F469CF00C586C9 /* IMMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMMenuViewController.xib; sourceTree = "<group>"; };
+		726141B915F469E300C586C9 /* IMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMMapViewController.h; sourceTree = "<group>"; };
+		726141BA15F469E300C586C9 /* IMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMMapViewController.m; sourceTree = "<group>"; };
+		726141BB15F469E300C586C9 /* IMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMMapViewController.xib; sourceTree = "<group>"; };
+		726141BF15F46A2400C586C9 /* IMServiceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMServiceProvider.h; sourceTree = "<group>"; };
+		726141C015F46A2400C586C9 /* IMServiceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMServiceProvider.m; sourceTree = "<group>"; };
+		726141C215F46A3900C586C9 /* IMLoginProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLoginProvider.h; sourceTree = "<group>"; };
+		726141C315F46A3900C586C9 /* IMLoginProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLoginProvider.m; sourceTree = "<group>"; };
+		726141C615F46DD800C586C9 /* IMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLoginViewController.h; sourceTree = "<group>"; };
+		726141C715F46DD800C586C9 /* IMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLoginViewController.m; sourceTree = "<group>"; };
+		726141C815F46DD800C586C9 /* IMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMLoginViewController.xib; sourceTree = "<group>"; };
+		726141CE15F474A100C586C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7261415015F465AF00C586C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726141CF15F474A100C586C9 /* QuartzCore.framework in Frameworks */,
+				726141CB15F473FB00C586C9 /* libfishstix-ios-sdk.a in Frameworks */,
+				7261415815F465AF00C586C9 /* UIKit.framework in Frameworks */,
+				7261415A15F465AF00C586C9 /* Foundation.framework in Frameworks */,
+				7261415C15F465AF00C586C9 /* CoreGraphics.framework in Frameworks */,
+				7261415E15F465AF00C586C9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261416F15F465B000C586C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261417515F465B000C586C9 /* SenTestingKit.framework in Frameworks */,
+				7261417615F465B000C586C9 /* UIKit.framework in Frameworks */,
+				7261417715F465B000C586C9 /* Foundation.framework in Frameworks */,
+				7261417815F465B000C586C9 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7261414815F465AF00C586C9 = {
+			isa = PBXGroup;
+			children = (
+				726141CE15F474A100C586C9 /* QuartzCore.framework */,
+				7261415F15F465AF00C586C9 /* Instamapper */,
+				7261417B15F465B000C586C9 /* InstamapperTests */,
+				7261415615F465AF00C586C9 /* Frameworks */,
+				7261415415F465AF00C586C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7261415415F465AF00C586C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7261415315F465AF00C586C9 /* Instamapper.app */,
+				7261417315F465B000C586C9 /* InstamapperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7261415615F465AF00C586C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */,
+				7261415715F465AF00C586C9 /* UIKit.framework */,
+				7261415915F465AF00C586C9 /* Foundation.framework */,
+				7261415B15F465AF00C586C9 /* CoreGraphics.framework */,
+				7261415D15F465AF00C586C9 /* CoreData.framework */,
+				7261417415F465B000C586C9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7261415F15F465AF00C586C9 /* Instamapper */ = {
+			isa = PBXGroup;
+			children = (
+				726141BE15F46A0E00C586C9 /* Service */,
+				726141A315F468D100C586C9 /* Controllers */,
+				7261416815F465AF00C586C9 /* IMAppDelegate.h */,
+				7261416915F465AF00C586C9 /* IMAppDelegate.m */,
+				7261416B15F465AF00C586C9 /* Instamapper.xcdatamodeld */,
+				7261416015F465AF00C586C9 /* Supporting Files */,
+			);
+			path = Instamapper;
+			sourceTree = "<group>";
+		};
+		7261416015F465AF00C586C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7261416115F465AF00C586C9 /* Instamapper-Info.plist */,
+				7261416215F465AF00C586C9 /* InfoPlist.strings */,
+				7261416515F465AF00C586C9 /* main.m */,
+				7261416715F465AF00C586C9 /* Instamapper-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7261417B15F465B000C586C9 /* InstamapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				7261418115F465B000C586C9 /* InstamapperTests.h */,
+				7261418215F465B000C586C9 /* InstamapperTests.m */,
+				7261417C15F465B000C586C9 /* Supporting Files */,
+			);
+			path = InstamapperTests;
+			sourceTree = "<group>";
+		};
+		7261417C15F465B000C586C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7261417D15F465B000C586C9 /* InstamapperTests-Info.plist */,
+				7261417E15F465B000C586C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7261418D15F4664500C586C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7261419515F4664500C586C9 /* libfishstix-ios-sdk.a */,
+				7261419715F4664500C586C9 /* fishstix-ios-sdkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		726141A315F468D100C586C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				726141C515F46DC400C586C9 /* Login */,
+				726141AE15F469AB00C586C9 /* Main */,
+				726141AD15F469A200C586C9 /* Map */,
+				726141AC15F4699C00C586C9 /* Menu */,
+				726141A415F468D700C586C9 /* Master */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		726141A415F468D700C586C9 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				726141A515F468FA00C586C9 /* IMMasterController.h */,
+				726141A615F468FA00C586C9 /* IMMasterController.m */,
+			);
+			name = Master;
+			sourceTree = "<group>";
+		};
+		726141AC15F4699C00C586C9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				726141B415F469CF00C586C9 /* IMMenuViewController.h */,
+				726141B515F469CF00C586C9 /* IMMenuViewController.m */,
+				726141B615F469CF00C586C9 /* IMMenuViewController.xib */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		726141AD15F469A200C586C9 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				726141B915F469E300C586C9 /* IMMapViewController.h */,
+				726141BA15F469E300C586C9 /* IMMapViewController.m */,
+				726141BB15F469E300C586C9 /* IMMapViewController.xib */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		726141AE15F469AB00C586C9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				726141AF15F469C100C586C9 /* IMDevicesViewController.h */,
+				726141B015F469C100C586C9 /* IMDevicesViewController.m */,
+				726141B115F469C100C586C9 /* IMDevicesViewController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		726141BE15F46A0E00C586C9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				726141BF15F46A2400C586C9 /* IMServiceProvider.h */,
+				726141C015F46A2400C586C9 /* IMServiceProvider.m */,
+				726141C215F46A3900C586C9 /* IMLoginProvider.h */,
+				726141C315F46A3900C586C9 /* IMLoginProvider.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		726141C515F46DC400C586C9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				726141C615F46DD800C586C9 /* IMLoginViewController.h */,
+				726141C715F46DD800C586C9 /* IMLoginViewController.m */,
+				726141C815F46DD800C586C9 /* IMLoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7261415215F465AF00C586C9 /* Instamapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7261418615F465B000C586C9 /* Build configuration list for PBXNativeTarget "Instamapper" */;
+			buildPhases = (
+				7261414F15F465AF00C586C9 /* Sources */,
+				7261415015F465AF00C586C9 /* Frameworks */,
+				7261415115F465AF00C586C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				726141CD15F4740D00C586C9 /* PBXTargetDependency */,
+			);
+			name = Instamapper;
+			productName = Instamapper;
+			productReference = 7261415315F465AF00C586C9 /* Instamapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7261417215F465B000C586C9 /* InstamapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7261418915F465B000C586C9 /* Build configuration list for PBXNativeTarget "InstamapperTests" */;
+			buildPhases = (
+				7261416E15F465B000C586C9 /* Sources */,
+				7261416F15F465B000C586C9 /* Frameworks */,
+				7261417015F465B000C586C9 /* Resources */,
+				7261417115F465B000C586C9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7261417A15F465B000C586C9 /* PBXTargetDependency */,
+			);
+			name = InstamapperTests;
+			productName = InstamapperTests;
+			productReference = 7261417315F465B000C586C9 /* InstamapperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7261414A15F465AF00C586C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = FishStix;
+			};
+			buildConfigurationList = 7261414D15F465AF00C586C9 /* Build configuration list for PBXProject "Instamapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7261414815F465AF00C586C9;
+			productRefGroup = 7261415415F465AF00C586C9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7261418D15F4664500C586C9 /* Products */;
+					ProjectRef = 7261418C15F4664500C586C9 /* fishstix-ios-sdk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7261415215F465AF00C586C9 /* Instamapper */,
+				7261417215F465B000C586C9 /* InstamapperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7261419515F4664500C586C9 /* libfishstix-ios-sdk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libfishstix-ios-sdk.a";
+			remoteRef = 7261419415F4664500C586C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7261419715F4664500C586C9 /* fishstix-ios-sdkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "fishstix-ios-sdkTests.octest";
+			remoteRef = 7261419615F4664500C586C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7261415115F465AF00C586C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261416415F465AF00C586C9 /* InfoPlist.strings in Resources */,
+				726141B315F469C100C586C9 /* IMDevicesViewController.xib in Resources */,
+				726141B815F469CF00C586C9 /* IMMenuViewController.xib in Resources */,
+				726141BD15F469E300C586C9 /* IMMapViewController.xib in Resources */,
+				726141CA15F46DD800C586C9 /* IMLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261417015F465B000C586C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261418015F465B000C586C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7261417115F465B000C586C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7261414F15F465AF00C586C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261416615F465AF00C586C9 /* main.m in Sources */,
+				7261416A15F465AF00C586C9 /* IMAppDelegate.m in Sources */,
+				7261416D15F465B000C586C9 /* Instamapper.xcdatamodeld in Sources */,
+				726141A715F468FA00C586C9 /* IMMasterController.m in Sources */,
+				726141B215F469C100C586C9 /* IMDevicesViewController.m in Sources */,
+				726141B715F469CF00C586C9 /* IMMenuViewController.m in Sources */,
+				726141BC15F469E300C586C9 /* IMMapViewController.m in Sources */,
+				726141C115F46A2400C586C9 /* IMServiceProvider.m in Sources */,
+				726141C415F46A3900C586C9 /* IMLoginProvider.m in Sources */,
+				726141C915F46DD800C586C9 /* IMLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7261416E15F465B000C586C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7261418315F465B000C586C9 /* InstamapperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7261417A15F465B000C586C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7261415215F465AF00C586C9 /* Instamapper */;
+			targetProxy = 7261417915F465B000C586C9 /* PBXContainerItemProxy */;
+		};
+		726141CD15F4740D00C586C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "fishstix-ios-sdk";
+			targetProxy = 726141CC15F4740D00C586C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7261416215F465AF00C586C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7261416315F465AF00C586C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7261417E15F465B000C586C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7261417F15F465B000C586C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7261418415F465B000C586C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../lib/fishstix-ios-sdk/fishstix-ios-sdk";
+			};
+			name = Debug;
+		};
+		7261418515F465B000C586C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "../lib/fishstix-ios-sdk/fishstix-ios-sdk";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7261418715F465B000C586C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Instamapper/Instamapper-Prefix.pch";
+				INFOPLIST_FILE = "Instamapper/Instamapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7261418815F465B000C586C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Instamapper/Instamapper-Prefix.pch";
+				INFOPLIST_FILE = "Instamapper/Instamapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7261418A15F465B000C586C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Instamapper.app/Instamapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Instamapper/Instamapper-Prefix.pch";
+				INFOPLIST_FILE = "InstamapperTests/InstamapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7261418B15F465B000C586C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Instamapper.app/Instamapper";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Instamapper/Instamapper-Prefix.pch";
+				INFOPLIST_FILE = "InstamapperTests/InstamapperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7261414D15F465AF00C586C9 /* Build configuration list for PBXProject "Instamapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7261418415F465B000C586C9 /* Debug */,
+				7261418515F465B000C586C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7261418615F465B000C586C9 /* Build configuration list for PBXNativeTarget "Instamapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7261418715F465B000C586C9 /* Debug */,
+				7261418815F465B000C586C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7261418915F465B000C586C9 /* Build configuration list for PBXNativeTarget "InstamapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7261418A15F465B000C586C9 /* Debug */,
+				7261418B15F465B000C586C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7261416B15F465AF00C586C9 /* Instamapper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7261416C15F465AF00C586C9 /* Instamapper.xcdatamodel */,
+			);
+			currentVersion = 7261416C15F465AF00C586C9 /* Instamapper.xcdatamodel */;
+			path = Instamapper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7261414A15F465AF00C586C9 /* Project object */;
+}

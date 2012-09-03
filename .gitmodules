@@ -1,0 +1,3 @@
+[submodule "lib/fishstix-ios-sdk"]
+	path = lib/fishstix-ios-sdk
+	url = git@github.com:fishstix/fishstix-ios-sdk.git
