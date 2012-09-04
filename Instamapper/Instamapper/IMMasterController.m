@@ -62,6 +62,9 @@ static IMMasterController *instance = NULL;
         
         self.slideController = [[MKDSlideViewController alloc] initWithRootViewController:self.devicesController];
         [self.slideController setLeftViewController:self.menuController rightViewController:self.menuController];
+        
+        // Login Delegate
+        [[IMLoginProvider sharedProvider] setDelegate:self];
     }
     
     return self;
@@ -85,7 +88,7 @@ static IMMasterController *instance = NULL;
 
 - (void) didLogin
 {
-    
+    [self.loginController dismissViewControllerAnimated:YES completion:^(void){}];
 }
 
 - (void) didLogout

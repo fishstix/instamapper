@@ -10,4 +10,9 @@
 
 @interface IMLoginViewController : FSViewController
 
+@property (nonatomic, strong) IBOutlet UITextField *usernameTextField;
+@property (nonatomic, strong) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)login:(id)sender;
+
 @end

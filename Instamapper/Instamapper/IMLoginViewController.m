@@ -8,20 +8,15 @@
 
 #import "IMLoginViewController.h"
 
+#import "IMLoginProvider.h"
+
 @interface IMLoginViewController ()
 
 @end
 
 @implementation IMLoginViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize usernameTextField = _usernameTextField;
+@synthesize passwordTextField = _passwordTextField;
 
 - (void)viewDidLoad
 {
@@ -29,10 +24,16 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark -
+#pragma mark LOGIN
+
+- (IBAction)login:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSString *username = self.usernameTextField.text;
+    NSString *password = self.passwordTextField.text;
+    
+    [[IMLoginProvider sharedProvider] loginWithUsername:username Password:password];
 }
+
 
 @end

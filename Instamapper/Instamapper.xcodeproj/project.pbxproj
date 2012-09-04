@@ -34,6 +34,7 @@
 		726141CA15F46DD800C586C9 /* IMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726141C815F46DD800C586C9 /* IMLoginViewController.xib */; };
 		726141CB15F473FB00C586C9 /* libfishstix-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261419515F4664500C586C9 /* libfishstix-ios-sdk.a */; };
 		726141CF15F474A100C586C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726141CE15F474A100C586C9 /* QuartzCore.framework */; };
+		7261420215F4838500C586C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7261420115F4838500C586C9 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		726141C715F46DD800C586C9 /* IMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLoginViewController.m; sourceTree = "<group>"; };
 		726141C815F46DD800C586C9 /* IMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMLoginViewController.xib; sourceTree = "<group>"; };
 		726141CE15F474A100C586C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7261420115F4838500C586C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7261420215F4838500C586C9 /* SystemConfiguration.framework in Frameworks */,
 				726141CF15F474A100C586C9 /* QuartzCore.framework in Frameworks */,
 				726141CB15F473FB00C586C9 /* libfishstix-ios-sdk.a in Frameworks */,
 				7261415815F465AF00C586C9 /* UIKit.framework in Frameworks */,
@@ -139,6 +142,7 @@
 		7261414815F465AF00C586C9 = {
 			isa = PBXGroup;
 			children = (
+				7261420115F4838500C586C9 /* SystemConfiguration.framework */,
 				726141CE15F474A100C586C9 /* QuartzCore.framework */,
 				7261415F15F465AF00C586C9 /* Instamapper */,
 				7261417B15F465B000C586C9 /* InstamapperTests */,
@@ -507,6 +511,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../lib/fishstix-ios-sdk/fishstix-ios-sdk";
 			};
@@ -529,6 +534,7 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "../lib/fishstix-ios-sdk/fishstix-ios-sdk";
 				VALIDATE_PRODUCT = YES;
